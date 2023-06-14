@@ -1,0 +1,6 @@
+---
+title: Installation (Frontend)
+---
+
+Installation
+============
