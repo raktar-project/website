@@ -45,6 +45,6 @@ The backend and the frontend can be separately installed using
 [AWS CDK](https://aws.amazon.com/cdk/).
 There are detailed instructions for both.
 
-In order to install the backend, head over to [Installation (Core)](/install-backend).
+In order to install the backend, head over to [Backend Installation](/backend).
 
-In order to install the frontend, header over to [Installation (Frontend)](/install-frontend).
+In order to install the frontend, header over to [Frontend Installation](/frontend).
