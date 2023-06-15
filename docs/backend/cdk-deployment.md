@@ -35,3 +35,11 @@ SSO_METADATA_URL=<metadata file URL from the manual steps>
 ```
 
 Feel free to tailor the domain and hosted zone domain to your needs.
+
+## Deployment
+
+Run `cdk deploy` either with the virtualenv activated or using `poetry run`.
+
+```shell
+poetry run cdk deploy
+```

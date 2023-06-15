@@ -5,6 +5,7 @@ title: Pre-Requisites
 # Pre-requisites
 
 - A recent version of Rust.
+- [cargo-lambda](https://www.cargo-lambda.info/) including zig for cross-compilation.
 - Python 3.9+.
 - [Poetry 1.4+](https://python-poetry.org/) for infrastructure Python dependencies.
 - An AWS account.
