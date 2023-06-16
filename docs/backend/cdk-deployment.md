@@ -32,9 +32,11 @@ Create a new `.env` file inside the `infrastructure` folder with the following c
 DOMAIN_NAME=api.crates.<your-domain>.com
 HOSTED_ZONE_DOMAIN_NAME=<your-domain>.com
 SSO_METADATA_URL=<metadata file URL from the manual steps>
+COGNITO_DOMAIN_PREFIX=<unique prefix>
 ```
 
 Feel free to tailor the domain and hosted zone domain to your needs.
+The Cognito domain prefix can be anything, but you need to find a unique prefix.
 
 ## Deployment
 
