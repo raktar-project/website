@@ -10,11 +10,8 @@ There are two things you'll need to do manually before the automated CDK deploym
 
 If you don't have a public hosted zone already for your domain name, create one on Route 53.
 
-{% info %}
-
-Take note of the hosted zone ID, you'll need this later.
-
-{% end %}
+!!! info
+    Take note of the hosted zone ID, you'll need this later.
 
 ## Creating an Application in IAM Identity Center
 
@@ -25,11 +22,8 @@ Add a new custom SAML 2.0 application. Give it a meaningful display name and des
 
 ![SAML application configuration](/assets/saml-app-configuration.png)
 
-{% info %}
-
-Take note of the IAM Identity Center SAML metadata file, you'll need this later.
-
-{% end %}
+!!! info
+    Take note of the IAM Identity Center SAML metadata file, you'll need this later.
 
 The rest of the fields on this page are not possible to fill in until we've deployed
 the CDK stack. However, it won't let you continue without specifying the ACS URL

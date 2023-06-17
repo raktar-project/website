@@ -8,6 +8,8 @@ authors = ["David Steiner"]
 python = "~3.10"
 aws-cdk-lib = "^2.84.0"
 cdk-static-site = "^0.1.0"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.16"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"
