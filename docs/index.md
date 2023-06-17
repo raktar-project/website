@@ -10,13 +10,9 @@ Users of the frontend application are authenticated using AWS IAM Identity Cente
 There may be other solutions Raktar will support in the future, but for now,
 having users provisioned in IAM Identity Center is a pre-requisite for the frontend.
 
-{% warning Warning! %}
-
-Raktar is work in progress. You are welcome to try it, but the installation steps are incomplete
-and the code is under heavy development.
-
-{% end %}
-
+!!! warning 
+    Raktar is work in progress. You are welcome to try it, but the installation steps are incomplete
+    and the code is under heavy development.
 
 ## Overview
 
