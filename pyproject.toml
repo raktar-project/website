@@ -1,18 +1,13 @@
 [tool.poetry]
-name = "infrastructure"
+name = "raktar-docs"
 version = "0.1.0"
-description = "Infrastructure for Raktar website"
+description = "Dependencies for Raktar website"
 authors = ["David Steiner"]
 
 [tool.poetry.dependencies]
 python = "~3.10"
-aws-cdk-lib = "^2.84.0"
-cdk-static-site = "^0.1.0"
 mkdocs = "^1.4.3"
 mkdocs-material = "^9.1.16"
-
-[tool.poetry.dev-dependencies]
-black = "^22.10.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
