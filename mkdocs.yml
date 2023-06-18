@@ -26,6 +26,7 @@ nav:
     - "Pre-requisites": "backend/pre-requisites.md"
     - "Manual Steps": "backend/manual-steps.md"
     - "CDK Deployment": "backend/cdk-deployment.md"
+    - "SSO Application Configuration": "backend/sso-app-setup.md"
   - "Frontend Installation":
     - "Frontend Installation": "frontend/README.md"
 markdown_extensions:

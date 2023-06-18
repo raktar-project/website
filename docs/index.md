@@ -1,14 +1,15 @@
 Serverless Private Cargo Registry
 =================================
 
-Raktar is a self-hosted private Cargo registry built on top of serverless AWS solutions
-to minimise costs. It's suitable for organisations who are already on AWS and familiar
-enough with the ecosystem to install the service using
-[AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/).
+Raktar is a private, self-hosted Cargo registry designed around
+the use of serverless AWS solutions to minimise operational costs.
+It is particularly suited for organisations already utilising AWS,
+and who possess sufficient familiarity with the AWS ecosystem
+to deploy the service using the [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/).
 
-Users of the frontend application are authenticated using AWS IAM Identity Center.
-There may be other solutions Raktar will support in the future, but for now,
-having users provisioned in IAM Identity Center is a pre-requisite for the frontend.
+Users of the frontend application are authenticated through AWS IAM Identity Center.
+While future updates may bring compatibility with other solutions,
+the current requirement for the frontend is user provisioning via IAM Identity Center.
 
 !!! warning 
     Raktar is work in progress. You are welcome to try it, but the installation steps are incomplete
@@ -16,21 +17,23 @@ having users provisioned in IAM Identity Center is a pre-requisite for the front
 
 ## Overview
 
-Raktar is split into two distinct parts - the backend written in Rust, and the frontend
-leveraging a traditional Typescript and React stack.
+Raktar is composed of two primary components: a backend, written in Rust,
+and a frontend, constructed with a conventional Typescript and React stack.
 
-The core functionality is entirely on the backend, and it's technically possible to use
-it without the frontend application. However, you'd be missing out on convenient features,
-such as a web UI for searching and viewing crates and token management.
+The core functionality of Raktar resides entirely within the backend,
+rendering it technically possible to use the service independently of the frontend application. 
+However, opting out of the frontend would mean missing out on handy features. 
+These include a web UI for efficient search and viewing of crates, as well as streamlined token management.
 
-Raktar is entirely open-source and free (MIT license).
+Raktar is entirely open-source and free of charge, provided under the MIT license.
 
 ### The Backend Service
 
 Repository: [Raktar Core](https://github.com/raktar-registry/raktar)
 
-The backend consists of a serverless API written in Rust, running on Lambda and exposed through
-AWS HTTP API Gateway. It uses S3 to store crates and AWS DynamoDB to store application data.
+The backend is structured as a serverless API, implemented in Rust,
+which operates on Lambda and is made accessible via AWS HTTP API Gateway.
+It employs S3 for crate storage and AWS DynamoDB for the retention of application data.
 
 This infrastructure means that the service costs close to nothing when it's not heavily used.
 
@@ -41,7 +44,7 @@ Repository: [Raktar Frontend](https://github.com/raktar-registry/raktar-app)
 The frontend is written using common frontend technologies, such as TypeScript, React
 and [URQL](https://formidable.com/open-source/urql/).
 
-The frontend is hosted on AWS S3 and it's served through CloudFront.
+The frontend is hosted on AWS S3, and it's served through CloudFront.
 
 ## Getting Started
 
