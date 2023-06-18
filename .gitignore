@@ -1,7 +1,7 @@
 .idea/
+.venv/
 .DS_Store
 __pycache__/
-infrastructure/.venv/
 infrastructure/cdk.out/
 site/
 

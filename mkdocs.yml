@@ -1,6 +1,8 @@
 site_name: "Raktar"
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
   palette:
     primary: custom
   icon:
