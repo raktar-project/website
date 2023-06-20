@@ -28,7 +28,8 @@ nav:
     - "CDK Deployment": "backend/cdk-deployment.md"
     - "SSO Application Configuration": "backend/sso-app-setup.md"
   - "Frontend Installation":
-    - "Frontend Installation": "frontend/README.md"
+    - "Pre-requisites": "frontend/pre-requisites.md"
+    - "Installation": "frontend/installation.md"
 markdown_extensions:
   - admonition
   - pymdownx.details
