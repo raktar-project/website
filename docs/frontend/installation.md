@@ -2,7 +2,21 @@
 title: Pre-requisites
 ---
 
-# Installation Steps
+# Preparations
+
+Clone the frontend project:
+
+```shell
+git clone git@github.com:raktar-registry/app.git
+```
+
+Install the application dependencies by running
+
+```shell
+yarn
+```
+
+in the project's root directory.
 
 ## Create the .env file
 
