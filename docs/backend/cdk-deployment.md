@@ -22,20 +22,23 @@ in the project's root directory. This will create a virtualenv in the same direc
 
 ## Configure the Deployment
 
-The Raktar backend is meant to be hosted on a different subdomain than the frontend.
-For example, if you're planning to host the frontend application at `crates.your-domain.com`,
-then you may want to host the backend at `api.crates.your-domain.com`.
+Raktar is hosted on sub-domains following a pre-defined naming convention.
+All you need to provide is the parent hosted zone. The frontend application
+will be hosted at `crates.{parent_hosted_zone}` and the API will be served at
+`api.crates.{parent_hosted_zone}`.
+
+Apart from the parent hosted zone domain, you'll also need the SSO metadata
+URL from the manual steps and a custom Cognito domain prefix that's not
+used by someone else yet.
 
 Create a new `.env` file inside the `infrastructure` folder with the following contents:
 
 ```dotenv
-DOMAIN_NAME=api.crates.<your-domain>.com
 HOSTED_ZONE_DOMAIN_NAME=<your-domain>.com
 SSO_METADATA_URL=<metadata file URL from the manual steps>
 COGNITO_DOMAIN_PREFIX=<unique prefix>
 ```
 
-Feel free to tailor the domain and hosted zone domain to your needs.
 The Cognito domain prefix can be anything, but you need to find a unique prefix.
 
 ## Deployment
