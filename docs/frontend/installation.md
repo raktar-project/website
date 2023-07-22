@@ -13,7 +13,7 @@ git clone git@github.com:raktar-registry/app.git
 Install the application dependencies by running
 
 ```shell
-yarn
+npm install
 ```
 
 in the project's root directory.
@@ -32,7 +32,7 @@ VITE_AWS_USER_POOL_CLIENT_ID=<generated during backend deployment>
 
 ## Build the bundle
 
-Run `yarn build` in the root directory - this will generate the
+Run `npm run build` in the root directory - this will generate the
 static files in `dist/`.
 
 ## Deploy the application
