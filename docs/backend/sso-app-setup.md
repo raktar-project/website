@@ -12,7 +12,7 @@ under `Application metadata`.
 Application ACS URL: 
 
 ```
-https://<cognito_domain_prefix>.auth.<region>.amazoncognito.com/saml2/idpresponse
+https://auth.crates.<your-domain>/saml2/idpresponse
 ```
 
 Application SAML audience:

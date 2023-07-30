@@ -10,6 +10,10 @@ There are two things you'll need to do manually before the automated CDK deploym
 
 If you don't have a public hosted zone already for your domain name, create one on Route 53.
 
+This step is not automated through the CDK stack as you may already have a hosted zone
+for your domain. Raktar will be deployed on the `crates` sub-domain, leaving your primary domain
+free to use for something else.
+
 !!! info
     Take note of the hosted zone ID, you'll need this later.
 
