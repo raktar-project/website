@@ -24,7 +24,6 @@ Create an `.env` file in `env/`. This file should contain the following variable
 
 ```dotenv
 VITE_HOSTED_ZONE_DOMAIN=<same as the backend's hosted zone>
-VITE_COGNITO_DOMAIN=<this was configured 
 VITE_AWS_REGION=<the region Cognito is in>
 VITE_AWS_USER_POOL_ID=<generated during backend deployment>
 VITE_AWS_USER_POOL_CLIENT_ID=<generated during backend deployment>

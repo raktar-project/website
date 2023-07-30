@@ -34,12 +34,9 @@ used by someone else yet.
 Create a new `.env` file inside the `infrastructure` folder with the following contents:
 
 ```dotenv
-HOSTED_ZONE_DOMAIN_NAME=<your-domain>.com
+HOSTED_ZONE_DOMAIN_NAME=<your-domain>
 SSO_METADATA_URL=<metadata file URL from the manual steps>
-COGNITO_DOMAIN_PREFIX=<unique prefix>
 ```
-
-The Cognito domain prefix can be anything, but you need to find a unique prefix.
 
 ## Deployment
 
