@@ -1,4 +1,5 @@
 site_name: "Raktar"
+site_description: "Serverless private Cargo registry for AWS - Raktar"
 theme:
   name: material
   custom_dir: overrides
@@ -39,6 +40,7 @@ repo_url: https://github.com/raktar-registry/raktar
 extra_css:
   - stylesheets/extra.css
 nav:
+  - "Overview": "index.md"
   - "Backend Installation":
     - "Pre-requisites": "backend/pre-requisites.md"
     - "Manual Steps": "backend/manual-steps.md"
@@ -47,7 +49,12 @@ nav:
   - "Frontend Installation":
     - "Pre-requisites": "frontend/pre-requisites.md"
     - "Installation": "frontend/installation.md"
+  - "User Guide":
+    - "Cargo Configuration": "guide/cargo-setup.md"
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
