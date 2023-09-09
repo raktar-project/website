@@ -49,6 +49,8 @@ nav:
   - "Frontend Installation":
     - "Pre-requisites": "frontend/pre-requisites.md"
     - "Installation": "frontend/installation.md"
+  - "User Guide":
+    - "Cargo Configuration": "guide/cargo-setup.md"
 markdown_extensions:
   - admonition
   - pymdownx.details
